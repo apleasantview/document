@@ -69,4 +69,5 @@ With thanks to Tim Berners-Lee, Håkon Wium Lie and Bert Bos, John Allsopp, John
 Open the source.
 
 ---
-Document · a pleasant view · 2026 · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+
+<span class="doc-label">Document · a pleasant view · 2026 · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></span>
