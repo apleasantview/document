@@ -1,0 +1,169 @@
+:root {
+        --color-bg: #f5f4f0;
+        --color-text: #141414;
+        --color-text-muted: #6b6b68;
+        --color-rule: #d4d3ce;
+        --color-accent: #141414;
+        --font-body: ui-serif, Georgia, "Times New Roman", serif;
+        --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+        --measure: 62ch;
+        --space-xs: 0.5rem;
+        --space-s: 1rem;
+        --space-m: 2rem;
+        --space-l: 4rem;
+        --space-xl: 8rem;
+        --leading: 1.65;
+        --leading-tight: 1.2;
+        --text-base: clamp(1rem, 1.5vw, 1.125rem);
+        --text-h1: clamp(1.75rem, 4vw, 2.5rem);
+        --text-h2: 1rem;
+        --text-code: 0.85em;
+        --text-mono: 0.75rem;
+        --text-label: 0.7rem;
+      }
+      [data-theme="dark"] {
+        --color-bg: #111110;
+        --color-text: #c8c8c4;
+        --color-text-muted: #6b6b68;
+        --color-rule: #2a2a28;
+        --color-accent: #c8c8c4;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body,
+      .doc-root {
+        background: var(--color-bg);
+        color: var(--color-text);
+        font-family: var(--font-body);
+        font-size: var(--text-base);
+        line-height: var(--leading);
+        transition:
+          background 0.2s,
+          color 0.2s;
+      }
+      .doc-root {
+        padding: var(--space-l) var(--space-m);
+        min-height: 100vh;
+      }
+      .doc-inner {
+        max-width: var(--measure);
+        margin: 0 auto;
+      }
+      .doc-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: var(--space-s);
+        padding-bottom: var(--space-m);
+        border-bottom: 1px solid var(--color-rule);
+      }
+      .doc-nav-pages {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+      .doc-switch {
+        font-family: var(--font-mono);
+        font-size: var(--text-mono);
+        color: var(--color-text-muted);
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        letter-spacing: 0.03em;
+      }
+      .doc-switch:hover {
+        color: var(--color-text);
+      }
+      .doc-switch.active {
+        color: var(--color-text);
+      }
+      .page {
+        display: none;
+      }
+      .page.active {
+        display: block;
+        padding-top: var(--space-l);
+      }
+      .u-flow {
+        --flow-space: var(--space-s);
+      }
+      .u-flow > * + * {
+        margin-block-start: var(--flow-space);
+      }
+      .u-flow > h2 {
+        --flow-space: var(--space-m);
+      }
+      .u-flow > hr {
+        --flow-space: var(--space-m);
+      }
+      .u-flow > blockquote {
+        --flow-space: var(--space-m);
+      }
+      hr {
+        border: none;
+        border-top: 1px solid var(--color-rule);
+      }
+      h1 {
+        font-size: var(--text-h1);
+        font-weight: 400;
+        line-height: var(--leading-tight);
+        letter-spacing: -0.02em;
+      }
+      h2 {
+        font-size: var(--text-h2);
+        font-weight: 400;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--color-text-muted);
+      }
+      a {
+        color: var(--color-text);
+        text-decoration: none;
+        border-bottom: 1px solid var(--color-rule);
+        transition: border-color 0.15s;
+      }
+      a:hover {
+        border-bottom-color: var(--color-text);
+      }
+      em {
+        font-style: italic;
+      }
+      strong {
+        font-weight: 600;
+      }
+      code {
+        font-family: var(--font-mono);
+        font-size: var(--text-code);
+        border: 1px solid var(--color-rule);
+        padding: 0.1em 0.35em;
+        border-radius: 2px;
+        background: color-mix(in srgb, var(--color-text) 4%, transparent);
+      }
+      :root:not([data-theme="dark"]) code {
+        background: color-mix(in srgb, var(--color-text) 2%, transparent);
+      }
+      blockquote {
+        border-left: 1px solid var(--color-rule);
+        padding: var(--space-s) 0 var(--space-s) var(--space-m);
+        color: var(--color-text-muted);
+        font-style: italic;
+      }
+      ul,
+      ol {
+        padding-left: var(--space-m);
+      }
+      li {
+        margin-bottom: var(--space-xs);
+      }
+      .doc-label {
+        font-family: var(--font-mono);
+        font-size: var(--text-label);
+        letter-spacing: 0.06em;
+        color: var(--color-text-muted);
+        text-transform: uppercase;
+        display: block;
+      }

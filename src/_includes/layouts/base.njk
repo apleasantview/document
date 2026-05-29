@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<baseline-head></baseline-head>
+  <body>
+    {% set cssPath = _baseline.paths.includes ~ "inline-style.css" %}
+    {{ cssPath | inlinePostCSS | safe }}
+    <div class="doc-root" id="root">
+      <div class="doc-inner">
+        <nav class="doc-nav">
+          <button class="doc-switch" onclick="toggleTheme()" id="themeBtn">
+            light — switch to dark
+          </button>
+          <div class="doc-nav-pages">
+            <button
+              class="doc-switch active"
+              id="btn-document"
+              onclick="showPage('document')"
+            >
+              document
+            </button>
+            <button
+              class="doc-switch"
+              id="btn-reference"
+              onclick="showPage('reference')"
+            >
+              reference
+            </button>
+          </div>
+        </nav>
+
+        <!-- Document page -->
+        <div class="page active u-flow" id="page-document">
+          <h1>{{ title }}</h1>
+          {{ content | safe }}
+        </div>
+
+        <!-- Reference page -->
+        <div class="page u-flow" id="page-reference">
+          {% include "partials/reference.njk" %}
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleTheme() {
+        const root = document.getElementById("root");
+        const btn = document.getElementById("themeBtn");
+        const isDark = root.getAttribute("data-theme") === "dark";
+        root.setAttribute("data-theme", isDark ? "" : "dark");
+        btn.textContent = isDark
+          ? "light — switch to dark"
+          : "dark — switch to light";
+      }
+
+      function showPage(name) {
+        document
+          .querySelectorAll(".page")
+          .forEach((p) => p.classList.remove("active"));
+        document
+          .querySelectorAll(".doc-nav-pages .doc-switch")
+          .forEach((b) => b.classList.remove("active"));
+        document.getElementById("page-" + name).classList.add("active");
+        document.getElementById("btn-" + name).classList.add("active");
+      }
+    </script>
+  </body>
+</html>
