@@ -1,0 +1,21 @@
+{
+  "name": "document",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "description": "An inquiry into the web document — what's left when everything accumulated around it is taken away.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "rimraf dist/ && npx @11ty/eleventy --serve",
+    "build": "rimraf dist/ && cross-env ELEVENTY_ENV=production npx @11ty/eleventy"
+  },
+  "author": "Cristovao Verstraeten",
+  "license": "CC-BY-4.0",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.5",
+    "@apleasantview/eleventy-plugin-baseline": "^0.1.0-next.41",
+    "cross-env": "^10.1.0",
+    "rimraf": "^6.1.3"
+  }
+}
