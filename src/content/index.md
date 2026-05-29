@@ -4,7 +4,7 @@ slug: 'home'
 description: 'An inquiry into the web document — what is left when everything accumulated is taken away.'
 date: 2026-05-29
 permalink: '/'
-layout: 'layouts/base.njk'
+layout: 'base.njk'
 ---
 
 An inquiry into the web document. What's left when everything accumulated is taken away. What can be derived honestly from what a page already is.
