@@ -14,6 +14,7 @@ This page is the artifact. The `CSS` it runs on is its residue.
 ---
 
 ## Authorial elements
+
 Body text sits at a comfortable measure — roughly 62 characters wide. Long enough to read, short enough to hold. The typeface is whatever the system offers in serif. No external requests, no choices imposed.
 
 > Negative space is structural. Whitespace earns its place by separating what needs separating, and nothing more.
@@ -21,6 +22,7 @@ Body text sits at a comfortable measure — roughly 62 characters wide. Long eno
 Headings compress toward the body. Hierarchy is carried by position and spacing, not weight or size. A second level exists only to orient — small, muted, tracking wide.
 
 ## The document speaks
+
 Lists are plain. Rules are thin. The `code` element holds its own, marked only by a quiet border. Links inherit the text color — part of the document, not departures from it.
 
 -   Structure from content, not convention
@@ -32,6 +34,7 @@ The glitch, when it comes, comes from outside the system. The system remains.
 ---
 
 ## Axioms
+
 A small set of commitments. Not rules — conclusions arrived at.
 
 The document precedes the design. A page has structure, hierarchy, and meaning before it is styled. The work is to read what's there, not impose what isn't.
@@ -47,17 +50,19 @@ Nothing here is decorative. The single moment that looks like decoration — the
 ---
 
 ## Reading
+
 The thinking behind this didn't begin with this page. It accumulated.
 
-[`a pleasant view`](https://www.apleasantview.com) — a practice that lives like this before it argues for it. Local, simple, dependable. The site is the thing, not a demo of it.
+On the document as the web's first unit — the link, the relationship, the structure. Nearer in spirit are the people who argued a page deserved to be read carefully — Zeldman, A List Apart, CSS Zen Garden — and Dutch graphic design, where the system points at itself.
 
-On glitch as legible failure — the system showing itself at the moment it breaks. Rosa Menkman, *Glitch Studies Manifesto* (2009).
+On an inheritance that runs the other way. The discipline of reduction comes from the modernists, where less was a position, not an absence. But they reduced to compose; this reduces to listen. Once the essence settles, the document directs.
 
-On the document as the web's first unit — the link, the relationship, the structure.
+On glitch as legible failure — the brief moment the system breaks and shows itself. Rosa Menkman, *Glitch Studies Manifesto* (2009).
 
-Then the broader lineage — Swiss typography (the grid as honesty), early web standards (Zeldman, A List Apart, CSS Zen Garden), Dutch graphic design (Experimental Jetset — the wordmark in a `code` element, the system pointing at itself), the indie web (Laurel Schwulst, Are.na). The common thread is an attitude toward reduction, not a visual style.
+[`a pleasant view`](https://www.apleasantview.com) — a practice that has lived it before arguing for it. Local, simple, dependable. The site is the thing, not a demo of it.
 
 ## Colophon
+
 Set in the system serif. Nothing fetched from anywhere.
 
 Built with vanilla CSS and custom properties. No framework, no build step.
