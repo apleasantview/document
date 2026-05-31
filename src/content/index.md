@@ -71,7 +71,7 @@ Classless CSS libraries — `pico.css` and others — already do something well:
 
 With thanks to Tim Berners-Lee, Håkon Wium Lie and Bert Bos, John Allsopp, John Perry Barlow, Frank Chimero, Robin Rendle, and Olia Lialina — for the work this rests on. And just as much to everyone else named on the page.
 
-Open the source.
+[Open the source](https://github.com/apleasantview/document).
 
 ---
 
