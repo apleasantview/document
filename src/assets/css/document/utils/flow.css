@@ -1,0 +1,21 @@
+/* Flow. Owns the document's vertical rhythm, so no global reset is needed: zero
+ * the children's block margins, then space each from the one before. Origins
+ * values: 1rem between most, 2rem before a section label, rule, or quote. */
+.flow {
+	--flow-space: var(--space-s);
+}
+
+.flow > * {
+	margin-block: 0;
+}
+
+.flow > * + * {
+	margin-block-start: var(--flow-space);
+}
+
+.flow > h2,
+.flow > h3,
+.flow > hr,
+.flow > blockquote {
+	--flow-space: var(--space-m);
+}

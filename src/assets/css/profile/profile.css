@@ -1,0 +1,28 @@
+/* Profile: Primitives → Semantics → Themes → Accessibility */
+
+/* Primitives */
+@import './primitives/colors.css';
+@import './primitives/typography.css';
+@import './primitives/spacing.css';
+@import './primitives/borders.css';
+
+/* Semantics. Map foundations to application-level roles, one file per axis
+ * mirroring primitives/. Colour roles declare a base reality (light) that themes
+ * override; the other axes are theme-stable. (Brad Frost's themeable systems.)
+ * @link https://bradfrost.com/blog/post/creating-themeable-design-systems/ */
+@import './semantic/colors.css';
+@import './semantic/typography.css';
+@import './semantic/spacing.css';
+@import './semantic/borders.css';
+
+/* Themes (deviations from the base reality in semantic/colors.css).
+ * Order is precedence: dark, then authored high-contrast, then the OS's
+ * forced-colors palette last, most authoritative when active. */
+@import './themes/dark.css';
+@import './themes/contrast.css';
+@import './themes/forced-colors.css';
+
+/* Accessibility. The non-negotiable floor (skip-link, screen-reader-only).
+ * Shared across presentations and always on, so it's part of the profile. */
+@import './accessibility/skip-link.css';
+@import './accessibility/sr-only.css';

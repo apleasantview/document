@@ -2,66 +2,51 @@
 <html lang="en">
 <baseline-head></baseline-head>
   <body>
-    {% set cssPath = _baseline.paths.includes ~ "inline-style.css" %}
-    {{ cssPath | inlinePostCSS | safe }}
-    <div class="doc-root" id="root">
-      <div class="doc-inner">
-        <nav class="doc-nav">
-          <button class="doc-switch" onclick="toggleTheme()" id="themeBtn">
-            light — switch to dark
-          </button>
-          <div class="doc-nav-pages">
-            <button
-              class="doc-switch active"
-              id="btn-document"
-              onclick="showPage('document')"
-            >
-              document
-            </button>
-            <button
-              class="doc-switch"
-              id="btn-reference"
-              onclick="showPage('reference')"
-            >
-              reference
-            </button>
-          </div>
-        </nav>
+    <header>
+      <div class="wrapper">{% include "components/c-navigation.njk" %}</div>
+    </header>
 
-        <!-- Document page -->
-        <div class="page active u-flow" id="page-document">
-          <h1>{{ title }}</h1>
-          {{ content | safe }}
-        </div>
-
-        <!-- Reference page -->
-        <div class="page u-flow" id="page-reference">
-          {% include "reference.njk" %}
-        </div>
+    <main class="page">
+      <div class="wrapper">
+        {% include "components/c-breadcrumbs.njk" %}
       </div>
-    </div>
+      <div class="flow wrapper">
+        <h1>{{ title }}</h1>
+        {{ content | safe }}
+      </div>
+      <div class="wrapper">
+        {% include "components/c-page-navigation.njk" %}
+      </div>
+    </main>
+
+    <footer>
+      <div class="wrapper">
+        {% include "components/c-footer.njk" %}
+      </div>
+    </footer>
 
     <script>
-      function toggleTheme() {
-        const root = document.getElementById("root");
-        const btn = document.getElementById("themeBtn");
-        const isDark = root.getAttribute("data-theme") === "dark";
-        root.setAttribute("data-theme", isDark ? "" : "dark");
-        btn.textContent = isDark
-          ? "light — switch to dark"
-          : "dark — switch to light";
-      }
-
-      function showPage(name) {
-        document
-          .querySelectorAll(".page")
-          .forEach((p) => p.classList.remove("active"));
-        document
-          .querySelectorAll(".doc-nav-pages .doc-switch")
-          .forEach((b) => b.classList.remove("active"));
-        document.getElementById("page-" + name).classList.add("active");
-        document.getElementById("btn-" + name).classList.add("active");
-      }
+      /* Theme switch: cycles system -> light -> dark, reading the same
+       * data-theme contract the CSS reads. system means follow the OS. */
+      (function () {
+        var btn = document.querySelector('[data-theme-toggle]');
+        if (!btn) return;
+        var modes = ['system', 'light', 'dark'];
+        var current = function () { return localStorage.getItem('theme') || 'system'; };
+        var paint = function () { btn.textContent = 'theme — ' + current(); };
+        btn.addEventListener('click', function () {
+          var next = modes[(modes.indexOf(current()) + 1) % modes.length];
+          if (next === 'system') {
+            delete document.documentElement.dataset.theme;
+            localStorage.removeItem('theme');
+          } else {
+            document.documentElement.dataset.theme = next;
+            localStorage.setItem('theme', next);
+          }
+          paint();
+        });
+        paint();
+      })();
     </script>
   </body>
 </html>

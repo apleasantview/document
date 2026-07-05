@@ -1,0 +1,17 @@
+.c-page-navigation__inner {
+	margin-block: var(--space-l);
+	display: flex;
+	justify-content: space-between;
+	gap: var(--space-m);
+}
+
+.c-page-navigation--prev,
+.c-page-navigation--next {
+	max-width: fit-content;
+	text-underline-offset: 0.42em;
+}
+
+.c-page-navigation--next {
+	margin-left: auto;
+	text-align: right;
+}

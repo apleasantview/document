@@ -1,0 +1,29 @@
+/* Headings. The editorial treatment: light weight throughout, h1 tracked tight,
+ * h2 a small uppercase muted label. h1/h2 tracking diverges (opposite signs), so
+ * it's set per element from the primitive lexicon — the single heading-tracking
+ * role is too coarse for this presentation. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: var(--text-lineheight-heading);
+	font-weight: var(--font-weight-normal);
+}
+
+h1 {
+	font-size: var(--text-size-display);
+	letter-spacing: var(--letter-spacing-tight);
+}
+
+h2 {
+	font-size: var(--text-size-eyebrow);
+	letter-spacing: var(--letter-spacing-wider);
+	text-transform: uppercase;
+	color: var(--color-text-muted);
+}
+
+h3 {
+	font-size: var(--text-size-body);
+}

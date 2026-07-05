@@ -1,0 +1,20 @@
+details {
+	margin-block: 1em;
+	padding: 1em 1em;
+	border: var(--border-width-default) solid var(--color-border);
+	border-radius: var(--border-radius-card);
+	background: var(--color-background-subtle);
+}
+
+summary {
+	cursor: pointer;
+	font-weight: 700;
+}
+
+summary > * {
+	display: inline-block;
+}
+
+details[open] summary {
+	margin-block-end: 0.5em;
+}

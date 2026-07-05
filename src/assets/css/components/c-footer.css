@@ -1,0 +1,8 @@
+.c-footer {
+  padding-block: var(--space-s);
+  border-top:1px solid var(--color-border);
+}
+
+.c-footer__inner {
+  margin-bottom: var(--space-m);
+}

@@ -1,0 +1,153 @@
+/* Base. The document's bare tags, in reading order. The composed structures
+ * (table, lists, details) live in blocks/, alongside headings and code — filed
+ * there as a pragmatic home, though they're still elements by the joint. */
+
+/* Structure */
+html {
+	position: relative;
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	font-family: var(--font-family-body);
+	font-size: var(--text-size-body);
+	line-height: var(--text-lineheight-body);
+	color: var(--color-text);
+	background-color: var(--color-background);
+	transition: background-color 0.2s, color 0.2s;
+	overflow-wrap: break-word;
+}
+
+header {
+	padding-block: var(--space-inset-s);
+}
+
+main {
+	padding-block: var(--space-inset-s);
+	flex: 1;
+}
+
+footer {
+	margin-top: auto;
+	padding-block-start: var(--space-inset-2xl);
+	padding-block-end: var(--space-inset-s);
+}
+
+section {
+	padding-top: var(--space-inset-m);
+}
+
+/* Text */
+p {
+	letter-spacing: var(--text-letterspacing-body);
+	max-inline-size: var(--text-inlinesize-body);
+}
+
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: var(--font-weight-semibold);
+}
+
+small {
+	font-size: var(--text-size-muted);
+	color: var(--color-text-muted);
+}
+
+mark {
+	padding-inline: 0.15em;
+}
+
+abbr[title] {
+	text-decoration: underline dotted;
+	text-underline-offset: 0.15em;
+	cursor: help;
+}
+
+sub,
+sup {
+	font-size: 0.75em;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+/* Links */
+a {
+	color: var(--color-text);
+	text-decoration: underline;
+	text-decoration-color: currentColor;
+	text-decoration-thickness: var(--link-underline-thickness);
+	text-underline-offset: var(--link-underline-offset);
+	transition:
+		color 0.15s ease-out,
+		text-decoration-color 0.15s ease-out;
+}
+
+a:hover {
+	color: var(--color-solid-hover);
+	text-decoration-color: currentColor;
+}
+
+/* Blockquote */
+blockquote {
+	padding-block: var(--space-xs);
+	padding-inline: var(--space-m) var(--space-s);
+	border-inline-start: var(--border-width-default) solid var(--color-border);
+	color: var(--color-text-muted);
+	font-style: italic;
+}
+
+blockquote > :first-child {
+	margin-block-start: 0;
+}
+
+blockquote > :last-child {
+	margin-block-end: 0;
+}
+
+/* Media */
+figure {
+	margin-inline: 0;
+	max-width: fit-content;
+}
+
+figcaption {
+	margin-block-start: 0.5em;
+	font-size: 0.925em;
+	color: var(--color-text-muted);
+}
+
+/* Rules */
+hr {
+	border: none;
+	border-top: var(--border-width-default) solid var(--color-border);
+}
+
+/* Block elements capped to the measure (vertical rhythm comes from .flow) */
+dl,
+blockquote,
+pre,
+table,
+figure {
+	max-inline-size: var(--text-inlinesize-body);
+}
+
+/* Focus */
+:where(a, button, input, select, textarea, summary, [tabindex]:not([tabindex='-1'])):focus-visible {
+	outline: var(--focus-ring-width) solid var(--color-accent-border);
+	outline-offset: var(--focus-ring-offset);
+	background-color: var(--color-surface-hover);
+}

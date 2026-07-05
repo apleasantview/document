@@ -1,0 +1,21 @@
+:root {
+	/* Widths (px; the number is the size) */
+	--border-width-1: 1px;
+	--border-width-2: 2px;
+	--border-width-4: 4px;
+
+	/* Radii. Named edges (the sharp floor + the two round specials) sit outside the
+	 * t-shirt rhythm, same shape as the spacing scale (void/hairline + numbers).
+	 * void ↔ pill is the pairing: no roundness ↔ total roundness. */
+
+	/* Named edges, outside the rhythm */
+	--border-radius-void: 0; /* sharp; deliberate absence of rounding, not a forgotten 0 */
+	--border-radius-circle: 50%; /* circle / ellipse */
+	--border-radius-pill: 9999px; /* pill; rounds the short side fully */
+
+	/* Rhythm (t-shirt; rem-based) */
+	--border-radius-sm: 0.25rem; /* 4px, inline controls */
+	--border-radius-md: 0.375rem; /* 6px, blocks / cards */
+	--border-radius-lg: 0.5rem; /* 8px */
+	--border-radius-xl: 0.75rem; /* 12px */
+}

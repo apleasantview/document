@@ -1,0 +1,8 @@
+<div class="c-page-navigation">
+	{% if pageNav.prev or pageNav.next %}
+	<nav class="c-page-navigation__inner">
+		{% if pageNav.prev %}<a rel="prev" href="{{ pageNav.prev.url }}" class="c-page-navigation--prev"><span>&#8592;</span>&nbsp;{{ pageNav.prev.label }}</a>{% endif %}
+		{% if pageNav.next %}<a rel="next" href="{{ pageNav.next.url }}" class="c-page-navigation--next">{{ pageNav.next.label }}&nbsp;<span>&#8594;</span></a>{% endif %}
+	</nav>
+	{% endif %}
+</div>

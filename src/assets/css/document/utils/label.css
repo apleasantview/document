@@ -1,0 +1,11 @@
+/* Label. Monospace, uppercase, wide tracking, muted. The smallest element in
+ * the system, for metadata: a colophon line, a byline. */
+
+.label {
+	font-family: var(--font-family-mono);
+	font-size: var(--text-label);
+	letter-spacing: 0.06em;
+	color: var(--color-text-muted);
+	text-transform: uppercase;
+	display: block;
+}

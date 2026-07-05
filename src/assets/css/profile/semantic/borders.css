@@ -1,0 +1,12 @@
+/* Semantic border roles */
+:root {
+	--border-width-default: var(--border-width-1); /* standard hairline border */
+
+	/* Radius by use: inline controls round less than blocks. Both could diverge. */
+	--border-radius-control: var(--border-radius-sm); /* code, kbd, link hover */
+	--border-radius-card: var(--border-radius-md); /* pre, details, cards */
+
+	/* Outline / focus ring roles */
+	--focus-ring-width: var(--border-width-1);
+	--focus-ring-offset: 0.12em;
+}

@@ -1,0 +1,23 @@
+/* The accessibility floor owes the *behaviour*: the link is present, reachable,
+ * and hidden until focused. The *visible* focused state (background, padding,
+ * z-index, colour) is presentation, the consumer's to style, not the profile's.
+ * Two halves of one duty, like forms ↔ forced-colors. */
+
+.skip-link:not(:focus):not(:active) {
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+.skip-link {
+	position: static;
+	max-width: fit-content;
+	margin: 0;
+}
+
+main:focus {
+	outline: none;
+}

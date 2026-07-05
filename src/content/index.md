@@ -1,10 +1,9 @@
 ---
-title: 'Document'
+title: 'document'
 slug: 'home'
 description: 'An inquiry into the web document — what is left when everything accumulated is taken away.'
 date: 2026-05-29
 permalink: '/'
-layout: 'base.njk'
 ---
 
 An inquiry into the web document. What's left when everything accumulated is taken away. What can be derived honestly from what a page already is.
@@ -72,7 +71,3 @@ Classless CSS libraries — `pico.css` and others — already do something well:
 With thanks to Tim Berners-Lee, Håkon Wium Lie and Bert Bos, John Allsopp, John Perry Barlow, Frank Chimero, Robin Rendle, and Olia Lialina — for the work this rests on. And just as much to everyone else named on the page.
 
 [Open the source](https://github.com/apleasantview/document).
-
----
-
-<span class="doc-label">Document · a pleasant view · 2026 · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></span>

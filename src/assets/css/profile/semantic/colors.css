@@ -1,0 +1,64 @@
+/* Semantic colour roles, base reality (light). Themes override these; light is
+ * the base and dark.css supplies the deviations (flip to go dark-first). Roles
+ * follow Radix's 12-step jobs, named instead of numbered. */
+:root {
+	color-scheme: light;
+
+	/* Neutral family. Chrome (Radix neutral 1–12) */
+	--color-background: var(--color-white); /* 1  app background */
+	--color-background-subtle: var(--color-neutral-50); /* 2  subtle background */
+
+	--color-surface: var(--color-neutral-100); /* 3  element background */
+	--color-surface-hover: var(--color-neutral-200); /* 4  hovered element */
+	--color-surface-active: var(--color-neutral-300); /* 5  active / selected */
+
+	--color-border-subtle: var(--color-neutral-200); /* 6  separator / hairline */
+	--color-border: var(--color-neutral-300); /* 7  border, focus ring */
+	--color-border-hover: var(--color-neutral-400); /* 8  hovered border */
+
+	--color-solid: var(--color-neutral-900); /* 9  neutral solid */
+	--color-solid-hover: var(--color-neutral-800); /* 10 hovered solid */
+	--color-on-solid: var(--color-white); /* –  text / icon on the neutral fill */
+
+	--color-text-muted: var(--color-neutral-500); /* 11 low-contrast text */
+	--color-text: var(--color-neutral-900); /* 12 high-contrast text */
+
+	/* Accent family. Emphasis / brand (Radix accent 1–12) */
+	--color-accent-surface: var(--color-blue-50); /* 3  tinted background */
+	--color-accent-surface-hover: var(--color-blue-100); /* 4  hovered tinted bg */
+
+	--color-accent-border: var(--color-blue-500); /* 7  accent border, focus ring */
+
+	--color-accent-solid: var(--color-blue-600); /* 9  brand fill, buttons, links */
+	--color-accent-solid-hover: var(--color-blue-700); /* 10 hovered fill */
+	--color-accent-on-solid: var(--color-white); /* –  text / icon on the fill */
+
+	--color-accent-text: var(--color-blue-700); /* 11 accent-coloured text */
+
+	/* Status families. Convention (hue → meaning) over the green/amber/red/blue
+	 * lexicon, same shape as accent (surface, border, text, solid, on-solid).
+	 * Never the sole signal; pair with an icon or word. */
+	--color-success-surface: var(--color-green-50);
+	--color-success-border: var(--color-green-400);
+	--color-success-text: var(--color-green-700);
+	--color-success-solid: var(--color-green-600);
+	--color-success-on-solid: var(--color-white);
+
+	--color-warning-surface: var(--color-amber-50);
+	--color-warning-border: var(--color-amber-400);
+	--color-warning-text: var(--color-amber-700);
+	--color-warning-solid: var(--color-amber-500);
+	--color-warning-on-solid: var(--color-neutral-950); /* amber too light for white */
+
+	--color-danger-surface: var(--color-red-50);
+	--color-danger-border: var(--color-red-400);
+	--color-danger-text: var(--color-red-700);
+	--color-danger-solid: var(--color-red-600);
+	--color-danger-on-solid: var(--color-white);
+
+	--color-info-surface: var(--color-blue-50);
+	--color-info-border: var(--color-blue-400);
+	--color-info-text: var(--color-blue-700);
+	--color-info-solid: var(--color-blue-600);
+	--color-info-on-solid: var(--color-white);
+}

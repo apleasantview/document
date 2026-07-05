@@ -1,0 +1,6 @@
+.wrapper {
+	box-sizing: content-box;
+  margin-inline: var(--wrapper-margin-inline);
+  max-width: var(--wrapper-max-width);
+  padding-inline: var(--wrapper-padding-inline);
+}

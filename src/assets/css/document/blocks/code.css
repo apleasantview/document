@@ -1,0 +1,41 @@
+/* Code */
+code {
+	font-family: var(--font-family-code);
+	font-size: var(--text-size-code);
+	line-height: var(--text-lineheight-code);
+	border: var(--border-width-default) solid var(--color-border);
+	padding: 0.15em 0.35em;
+	border-radius: var(--border-radius-control);
+	background: var(--color-background-subtle);
+}
+
+kbd,
+samp,
+pre {
+	font-family: var(--font-family-code);
+	font-size: var(--text-size-secondary);
+}
+
+pre {
+	padding: 1rem;
+	border: var(--border-width-default) solid var(--color-border);
+	border-radius: var(--border-radius-card);
+	background: var(--color-background-subtle);
+	overflow: auto;
+	max-width: 100%;
+}
+
+pre code {
+	padding: 0;
+	border: 0;
+	border-radius: var(--border-radius-void);
+	background: transparent;
+}
+
+kbd {
+	padding: 0.15em 0.35em;
+	border: var(--border-width-default) solid var(--color-border);
+	border-bottom-width: var(--border-width-2);
+	border-radius: var(--border-radius-control);
+	background: var(--color-background-subtle);
+}

@@ -1,0 +1,23 @@
+ul,
+ol {
+	margin-block-end: var(--flow-space-m);
+	padding-inline-start: var(--space-m);
+}
+
+li {
+	margin-block-end: var(--space-xs);
+}
+
+dt,
+dd {
+	margin-inline: 0;
+	margin-block: 0.25em 0.75em;
+}
+
+dt {
+	font-weight: var(--font-weight-semibold);
+}
+
+dd + dt {
+	margin-top: 0.5em;
+}

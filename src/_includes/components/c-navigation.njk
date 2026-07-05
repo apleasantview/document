@@ -1,0 +1,17 @@
+<nav class="c-navigation">
+	<div class="c-navigation__inner">
+		<button class="c-navigation-switch" type="button" data-theme-toggle></button>
+		<div class="c-navigation-pages">
+			{% set active = 'active' if ('/' == permalink) %}
+			<a class="c-navigation-switch {{ active }}" href="/">
+				{{ settings.title }}
+			</a>
+			<div class="c-navigation__group">
+				{% for item in navigation %}
+				{% set active = 'active' if (item.url == permalink) %}
+					<a class="c-navigation-switch {{ active }}" href="{{ item.url }}">{{ item.label }}</a>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</nav>
