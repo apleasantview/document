@@ -5,4 +5,7 @@
 
 .c-footer__inner {
   margin-bottom: var(--space-m);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }

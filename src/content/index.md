@@ -1,9 +1,9 @@
 ---
-title: 'Document'
-slug: 'home'
-description: 'An inquiry into the web document — what is left when everything accumulated is taken away.'
+title: "Document"
+slug: "home"
+description: "An inquiry into the web document — what is left when everything accumulated is taken away."
 date: 2026-05-29
-permalink: '/'
+permalink: "/"
 ---
 
 An inquiry into the web document. What's left when everything accumulated is taken away. What can be derived honestly from what a page already is.
@@ -24,9 +24,9 @@ Headings compress toward the body. Hierarchy is carried by position and spacing,
 
 Lists are plain. Rules are thin. The `code` element holds its own, marked only by a quiet border. Links inherit the text color — part of the document, not departures from it.
 
--   Structure from content, not convention
--   Spacing as the primary design variable
--   Typography as the whole argument
+- Structure from content, not convention
+- Spacing as the primary design variable
+- Typography as the whole argument
 
 The glitch, when it comes, comes from outside the system. The system remains.
 
@@ -42,7 +42,7 @@ Removing is harder than adding. Every element earns its place or leaves. The dis
 
 The system should be legible to the person reading the page and the person reading the source. Both are visitors. Neither is an afterthought.
 
-What an element *is* matters more than what it looks like. A heading is a heading because of its place in the structure, not its size. Style follows from meaning, never the reverse.
+What an element _is_ matters more than what it looks like. A heading is a heading because of its place in the structure, not its size. Style follows from meaning, never the reverse.
 
 Nothing here is decorative. The single moment that looks like decoration — the break in the signal — is the system showing its own mechanics. Honest, not ornamental.
 
@@ -56,7 +56,9 @@ On the document as the web's first unit — the link, the relationship, the stru
 
 On an inheritance that runs the other way. The discipline of reduction comes from the modernists, where less was a position, not an absence. But they reduced to compose; this reduces to listen. Once the essence settles, the document directs.
 
-On glitch as legible failure — the brief moment the system breaks and shows itself. Rosa Menkman, *Glitch Studies Manifesto* (2009).
+On glitch as legible failure — the brief moment the system breaks and shows itself. Rosa Menkman, _Glitch Studies Manifesto_ (2009).
+
+[`css-profile`](https://apv-css-profile.netlify.app/) — the sibling question. Where this asks what a page _is_, it asks what its _identity_ is: how it comes to present itself.
 
 [`a pleasant view`](https://www.apleasantview.com) — a practice that has lived it before arguing for it. Local, simple, dependable. The site is the thing, not a demo of it.
 

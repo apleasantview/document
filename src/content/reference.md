@@ -1,9 +1,9 @@
 ---
-title: 'Reference'
-slug: 'reference'
-description: 'Every element the document knows about, rendered in place — the system, describing itself.'
+title: "Reference"
+slug: "reference"
+description: "Every element the document knows about, rendered in place — the system, describing itself."
 date: 2026-05-29
-permalink: '/reference/'
+permalink: "/reference/"
 ---
 
 Every element the document knows about, rendered in place. The system, describing itself.
@@ -30,7 +30,7 @@ The document has no chrome. What remains when everything accumulated is stripped
 
 `em` — Italic stress. For titles, foreign words, a gentle lean into meaning. The serif italic does the work.
 
-A document is not a *design system*. It is a *position*.
+A document is not a _design system_. It is a _position_.
 
 ---
 
@@ -46,8 +46,6 @@ Spacing is the **primary design variable**. Everything else follows.
 
 `a` — Inherits the text color. No default underline; a quiet border sits below instead, deepening on hover. Accessible, and of-a-piece.
 
-The flow utility was first described by [Andy Bell](https://piccalil.li). The document owes him a rule or two.
-
 ---
 
 ## Blockquote
@@ -62,9 +60,9 @@ The flow utility was first described by [Andy Bell](https://piccalil.li). The do
 
 `ul`, `ol` — Plain, no custom markers. Indented to the column. Items given a little room beneath.
 
--   Structure from content, not convention
--   Spacing as the primary design variable
--   Typography as the whole argument
+- Structure from content, not convention
+- Spacing as the primary design variable
+- Typography as the whole argument
 
 ---
 
