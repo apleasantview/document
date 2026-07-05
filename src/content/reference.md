@@ -84,4 +84,4 @@ The document runs on custom properties. Everything adjustable from one place.
 
 ## Labels
 
-`.doc-label` — Monospace, uppercase, wide tracking, muted. Used for metadata at the document's close. The smallest element in the system.
+`.label` — Monospace, uppercase, wide tracking, muted. Used for metadata at the document's close. The smallest element in the system.
