@@ -1,5 +1,5 @@
 ---
-title: 'document'
+title: 'Document'
 slug: 'home'
 description: 'An inquiry into the web document — what is left when everything accumulated is taken away.'
 date: 2026-05-29

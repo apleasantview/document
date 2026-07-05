@@ -1,5 +1,5 @@
 ---
-title: 'reference'
+title: 'Reference'
 slug: 'reference'
 description: 'Every element the document knows about, rendered in place — the system, describing itself.'
 date: 2026-05-29
