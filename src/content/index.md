@@ -66,7 +66,7 @@ Set in the system serif. Nothing fetched from anywhere.
 
 Built with vanilla CSS and custom properties. No framework, no build step.
 
-Classless CSS libraries — `pico.css` and others — already do something well: pages that look considered without effort. This isn't that. It starts from what a page is and lets the look fall out. The overlap is the surface.
+Classless CSS libraries already do something well: pages that look considered without effort. This isn't that. It starts from what a page is and lets the look fall out. The overlap is the surface.
 
 With thanks to Tim Berners-Lee, Håkon Wium Lie and Bert Bos, John Allsopp, John Perry Barlow, Frank Chimero, Robin Rendle, and Olia Lialina — for the work this rests on. And just as much to everyone else named on the page.
 
